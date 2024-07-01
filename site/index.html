@@ -9,8 +9,6 @@
     <meta charset="utf-8">
     <link rel="icon" href="" type="image/logo_ok">
     <!-- Stylesheets-->
-    <link rel="stylesheet" type="text/css"
-          href="//fonts.googleapis.com/css?family=Kanit:300,400,500,500i,600,900%7CRoboto:400,900">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
@@ -25,9 +23,17 @@
         z-index: 1;
     }
 
+
     html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {
         display: block;
     }</style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--<link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />-->
 </head>
 <body>
 <div class="ie-panel"></div>
@@ -42,7 +48,7 @@
     <header class="section page-header rd-navbar-dark">
         <!-- RD Navbar-->
         <div class="rd-navbar-wrap" style="height: 100px">
-            <nav class="rd-navbar rd-navbar-classic" >
+            <nav class="rd-navbar rd-navbar-classic">
                 <div class="rd-navbar-panel">
                     <!-- RD Navbar Toggle-->
                     <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-main"><span></span></button>
@@ -60,18 +66,21 @@
                                          data-nav-custom=".owl-carousel-navbar">
                                         <!-- Post Inline-->
                                         <article class="post-inline">
-                                            <time class="post-inline-time" datetime="2020">April 15, 2020</time>
-                                            <p class="post-inline-title">Sportland vs Dream Team</p>
+                                            <time class="post-inline-time" datetime="">15 de Julio, Miercoles</time>
+                                            <p class="post-inline-title " style="color: #35ad79">A.M.O vs Galactics</p>
                                         </article>
                                         <!-- Post Inline-->
                                         <article class="post-inline">
-                                            <time class="post-inline-time" datetime="2020">April 15, 2020</time>
-                                            <p class="post-inline-title">Sportland vs Real Madrid</p>
+                                            <time class="post-inline-time">April 15, 2020</time>
+                                            <p class="post-inline-title" style="color: #35ad79">Sportland vs Real
+                                                Madrid</p>
                                         </article>
                                         <!-- Post Inline-->
                                         <article class="post-inline">
-                                            <time class="post-inline-time" datetime="2020">April 15, 2020</time>
-                                            <p class="post-inline-title">Sportland vs Barcelona</p>
+                                            <time class="post-inline-time"
+                                            ">April 15, 2020</time>
+                                            <p class="post-inline-title" style="color: #35ad79">Sportland vs
+                                                Barcelona</p>
                                         </article>
                                     </div>
                                 </div>
@@ -81,9 +90,10 @@
                             <ul class="list-inline list-inline-bordered">
                                 <li>
                                     <div class="cart-inline-toggled-outer">
-                                        <!-- Link Cart-->
-                                        <!-- Cart Inline-->
 
+                                        <img class="brand-logo "
+                                             src="images/trivial/logo_clicko.png"
+                                             alt="" width="120" height="80"/>
                                     </div>
                                 </li>
                             </ul>
@@ -115,15 +125,16 @@
                     <div class="rd-navbar-main-bottom rd-navbar-darker">
                         <div class="rd-navbar-main-container container  d-flex justify-content-center">
                             <!-- RD Navbar Nav-->
-                            <ul class="rd-navbar-nav">
+                            <ul class="rd-navbar-nav mb-0">
                                 <li class="rd-nav-item active" id="nav-clasificacion"><a class="rd-nav-link ">Clasificación</a>
                                 </li>
                                 <li class="rd-nav-item" id="nav-results"><a class="rd-nav-link">Resultados</a>
                                 </li>
-                                <li class="rd-nav-item" id="nav-next-matches"><a class="rd-nav-link">Proximos Partidos</a>
+                                <li class="rd-nav-item" id="nav-next-matches"><a class="rd-nav-link">Proximos
+                                    Partidos</a>
                                 </li>
-                              <!--  <li class="rd-nav-item" id="teams-presentation"><a class="rd-nav-link">Equipos</a>
-                                </li>-->
+                                <!--  <li class="rd-nav-item" id="teams-presentation"><a class="rd-nav-link">Equipos</a>
+                                  </li>-->
                             </ul>
 
                         </div>
@@ -132,11 +143,11 @@
             </nav>
         </div>
     </header>
+    <section class="section swiper-container2  swiper-classic bg-gray-2 slide-2" data-loop="false"
+             data-simulate-touch="false" data-autoplay="false" data-slide-effect="fade">
 
-    <section class="section swiper-container2 swiper-slider swiper-classic bg-gray-2 slide-1" data-loop="false"
-              data-simulate-touch="false" data-autoplay="false" data-slide-effect="fade">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide text-center" data-slide-bg="images/slider-1-slide-1-1920x671.jpg">
+        <div class="swiper-wrapper sw">
+            <div class="swiper-slide text-center s1">
                 <div class="container">
                     <!-- Table team-->
                     <div class="table-custom-responsive">
@@ -252,7 +263,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide text-center" data-slide-bg="images/slider-1-slide-1-1920x671.jpg">
+            <div class="swiper-slide text-center s1">
                 <div class="container">
                     <div class="col-12 row ">
                         <!-- Heading Component-->
@@ -268,37 +279,38 @@
                                 <div class="game-result-main-vertical">
                                     <div class="game-result-team game-result-team-horizontal game-result-team-first">
                                         <figure class="game-result-team-figure"><img
-                                                src="images/team-bavaria-fc-26x34.png" alt="" width="26"
-                                                height="34"/>
+                                                src="images/trivial/logos_teams/quesitos.png" alt="" width="100"
+                                                style="max-width: unset; height: 80px"
+                                        />
                                         </figure>
-                                        <div class="game-result-team-title">
-                                            <div class="game-result-team-name">Bavaria FC</div>
-                                            <div class="game-result-team-country">Germany</div>
+                                        <div class="game-result-team-title col-6">
+                                            <div class="game-result-team-name">2 Quesitos y Medio</div>
+                                            <div class="game-result-team-country">Eva - Jordi - Henrique</div>
                                         </div>
-                                        <div class="game-result-score game-result-score-big">2
+                                        <div class="game-result-score game-result-score-big">1
                                         </div>
                                     </div>
                                     <span class="game-result-team-divider">VS</span>
                                     <div class="game-result-team game-result-team-horizontal game-result-team-second">
                                         <figure class="game-result-team-figure"><img
-                                                src="images/team-athletic-33x30.png" alt="" width="33"
-                                                height="30"/>
+                                                src="images/trivial/logos_teams/distrito.png" alt="" width="100"
+                                                style="max-width: unset; height: 80px"/>
                                         </figure>
-                                        <div class="game-result-team-title">
-                                            <div class="game-result-team-name">Atletico</div>
-                                            <div class="game-result-team-country">USA</div>
+                                        <div class="game-result-team-title col-6">
+                                            <div class="game-result-team-name">Distrito 3.4</div>
+                                            <div class="game-result-team-country">Alejandro - Haydeé - Oscar Jr</div>
                                         </div>
                                         <div class="game-result-score game-result-score-big game-result-team-win">
-                                            3<span class="game-result-team-label game-result-team-label-right">Victoria</span>
+                                            2<span
+                                                class="game-result-team-label game-result-team-label-right">Victoria</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="game-result-footer">
                                     <ul class="game-result-details">
-                                        <li>Away</li>
-                                        <li>Bavaria Stadium</li>
+                                        <li>Sala Jobs</li>
                                         <li>
-                                            <time datetime="2020-04-14">April 14, 2020</time>
+                                            <time datetime="2020-04-14">19-06-2024</time>
                                         </li>
                                     </ul>
                                 </div>
@@ -322,7 +334,8 @@
                                             <div class="game-result-team-country">Los angeles</div>
                                         </div>
                                         <div class="game-result-score game-result-score-big game-result-team-draw">
-                                            2<span class="game-result-team-label-draw game-result-team-label-right-draw">Empate</span>
+                                            2<span
+                                                class="game-result-team-label-draw game-result-team-label-right-draw">Empate</span>
                                         </div>
                                     </div>
                                     <span class="game-result-team-divider">VS</span>
@@ -336,7 +349,8 @@
                                             <div class="game-result-team-country">Spain</div>
                                         </div>
                                         <div class="game-result-score game-result-score-big game-result-team-draw">
-                                            2<span class="game-result-team-label-draw game-result-team-label-right-draw">Empate</span>
+                                            2<span
+                                                class="game-result-team-label-draw game-result-team-label-right-draw">Empate</span>
                                         </div>
                                     </div>
                                 </div>
@@ -387,7 +401,8 @@
                                             <div class="game-result-team-country">USA</div>
                                         </div>
                                         <div class="game-result-score game-result-score-big game-result-team-win">
-                                            3<span class="game-result-team-label game-result-team-label-right">Victoria</span>
+                                            3<span
+                                                class="game-result-team-label game-result-team-label-right">Victoria</span>
                                         </div>
                                     </div>
                                 </div>
@@ -420,7 +435,8 @@
                                             <div class="game-result-team-country">Los angeles</div>
                                         </div>
                                         <div class="game-result-score game-result-score-big game-result-team-draw">
-                                            2<span class="game-result-team-label-draw game-result-team-label-right-draw">Empate</span>
+                                            2<span
+                                                class="game-result-team-label-draw game-result-team-label-right-draw">Empate</span>
                                         </div>
                                     </div>
                                     <span class="game-result-team-divider">VS</span>
@@ -434,7 +450,8 @@
                                             <div class="game-result-team-country">Spain</div>
                                         </div>
                                         <div class="game-result-score game-result-score-big game-result-team-draw">
-                                            2<span class="game-result-team-label-draw game-result-team-label-right-draw">Empate</span>
+                                            2<span
+                                                class="game-result-team-label-draw game-result-team-label-right-draw">Empate</span>
                                         </div>
                                     </div>
                                 </div>
@@ -452,588 +469,152 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide text-center" data-slide-bg="images/slider-1-slide-1-1920x671.jpg">
+            <div class="swiper-slide text-center s1">
                 <div class="container">
-                    <article class="game-result">
-                        <div class="game-info game-info-creative">
-                            <p class="game-info-subtitle">Real Stadium -
-                                <time datetime="08:30"> 08:30 PM</time>
-                            </p>
-                            <h3 class="game-info-title" style="color: #0D0A0A">PROXIMO PARTIDO</h3>
-                            <div class="game-info-main">
-                                <div class="game-info-team game-info-team-first">
-                                    <figure><img src="images/Shark.png" alt="" width="75"
-                                                 height="99"/>
-                                    </figure>
-                                    <div class="game-result-team-name">2 Quesitos y Medio</div>
-                                    <div class="game-result-team-country">Eva - Jordi - Henrique</div>
-                                </div>
-                                <div class="game-info-middle game-info-middle-vertical">
-                                    <time class="time-big" datetime="2020-04-17"><span
-                                            class="heading-3" style="color: #0D0A0A">Miécoles 02</span> Jul 2024
-                                    </time>
-                                    <div class="game-result-divider-wrap"><span
-                                            class="game-info-team-divider">VS</span></div>
-                                    <div class="group-sm">
+                    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel" data-slide-to="1"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active"  data-interval="1000">
+                                <div class="game-result " >
+
+
+
+                                    <div class="game-info game-info-creative ">
+                                        <p class="game-info-subtitle">Sala Jobs -
+                                            <time datetime="08:30">15h - 16h</time>
+                                        </p>
+                                        <h3 class="game-info-title" style="color: #0D0A0A">PROXIMO PsARTIDO</h3>
+                                        <div class="game-info-main ">
+                                            <div class="game-info-team game-info-team-first">
+                                                <figure><img src="images/trivial/logos_teams/amo.png" alt=""/>
+                                                </figure>
+                                                <div class="game-result-team-name">A.M.O.</div>
+                                                <div class="game-result-team-country"></div>
+                                            </div>
+                                            <div class="game-info-middle game-info-middle-vertical">
+                                                <time class="time-big" datetime="2020-04-17"><span
+                                                        class="heading-3" style="color: #0D0A0A">Miércoles 02</span> Jul 2024
+                                                </time>
+                                                <div class="game-result-divider-wrap"><span
+                                                        class="game-info-team-divider">VS</span></div>
+                                                <div class="group-sm">
+
+                                                </div>
+                                            </div>
+                                            <div class="game-info-team game-info-team-second">
+                                                <figure><img src="images/trivial/logos_teams/galactics.png" alt=""/>
+                                                </figure>
+                                                <div class="game-result-team-name">Galactics</div>
+                                                <div class="game-result-team-country"></div>
+                                            </div>
+                                        </div>
+
 
                                     </div>
-                                </div>
-                                <div class="game-info-team game-info-team-second">
-                                    <figure><img src="images/Sexwine.png" alt="" width="91"
-                                                 height="91"/>
-                                    </figure>
-                                    <div class="game-result-team-name">Galactics</div>
-                                    <div class="game-result-team-country">Abdel - Carla - Raíssa</div>
+
+                                    <div class="game-info-countdown">
+                                        <div class="countdown countdown-bordered" data-type="until"
+                                             data-time="31 Dec 2020 16:00" data-format="dhms" data-style="short"></div>
+                                    </div>
+
+
+
                                 </div>
                             </div>
-                        </div>
-                        <div class="game-info-countdown">
-                            <div class="countdown countdown-bordered" data-type="until"
-                                 data-time="31 Dec 2020 16:00" data-format="dhms" data-style="short"></div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-          <!--  <div class="swiper-slide text-center" data-slide-bg="images/slider-1-slide-1-1920x671.jpg">
-                <div class="container">
-                    <article class="heading-component">
-                        <div class="heading-component-inner">
-                            <h5 class="heading-component-title">GALACTICS
-                            </h5>
-                        </div>
-                    </article>
-                    <div class="block-voting">
-                        <div class="group-md">
-                            &lt;!&ndash; Player Voting Item&ndash;&gt;
-                            <div class="player-voting-item">
-                                <div class="player-voting-item-figure"><img src="images/player-5-152x144.jpg"
-                                                                            alt="" width="152" height="144"/>
-                                    <div class="player-number">
-                                        <p>P</p>
-                                    </div>
-                                    <div class="player-number-div">
-                                        <p>Raíssa</p>
-                                    </div>
-                                </div>
-                                <div class="player-voting-item-title">
-                                    <p>Raíssa</p>
-                                </div>
-                                <div class="player-voting-item-progress">
-                                    &lt;!&ndash; Linear progress bar&ndash;&gt;
-                                    <article
-                                            class="progress-linear progress-bar-modern progress-bar-modern-red">
-                                        <div class="progress-header">
-                                            <p>Programación</p>
+
+                            <div class="item"  data-interval="1000">
+                                <div class="game-result " >
+
+
+
+                                    <div class="game-info game-info-creative ">
+                                        <p class="game-info-subtitle">Sala Jobs -
+                                            <time datetime="08:30">15h - 16h</time>
+                                        </p>
+                                        <h3 class="game-info-title" style="color: #0D0A0A">PROXIMO PsARTIDO</h3>
+                                        <div class="game-info-main ">
+                                            <div class="game-info-team game-info-team-first">
+                                                <figure><img src="images/trivial/logos_teams/amo.png" alt=""/>
+                                                </figure>
+                                                <div class="game-result-team-name">A.M.O.</div>
+                                                <div class="game-result-team-country"></div>
+                                            </div>
+                                            <div class="game-info-middle game-info-middle-vertical">
+                                                <time class="time-big" datetime="2020-04-17"><span
+                                                        class="heading-3" style="color: #0D0A0A">Miércoles 02</span> Jul 2024
+                                                </time>
+                                                <div class="game-result-divider-wrap"><span
+                                                        class="game-info-team-divider">VS</span></div>
+                                                <div class="group-sm">
+
+                                                </div>
+                                            </div>
+                                            <div class="game-info-team game-info-team-second">
+                                                <figure><img src="images/trivial/logos_teams/galactics.png" alt=""/>
+                                                </figure>
+                                                <div class="game-result-team-name">Galactics</div>
+                                                <div class="game-result-team-country"></div>
+                                            </div>
                                         </div>
-                                    </article>
-                                </div>
-                            </div>
-                            <div class="player-voting-item">
-                                <div class="player-voting-item-figure"><img src="images/player-5-152x144.jpg"
-                                                                            alt="" width="152" height="144"/>
-                                    <div class="player-number">
-                                        <p>P</p>
+
+
                                     </div>
-                                </div>
-                                <div class="player-voting-item-title">
-                                    <p>Raíssa</p>
-                                </div>
-                                <div class="player-voting-item-progress">
-                                    &lt;!&ndash; Linear progress bar&ndash;&gt;
-                                    <article
-                                            class="progress-linear progress-bar-modern progress-bar-modern-red">
-                                        <div class="progress-header">
-                                            <p>Programación</p>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                            <div class="player-voting-item">
-                                <div class="player-voting-item-figure"><img src="images/player-5-152x144.jpg"
-                                                                            alt="" width="152" height="144"/>
-                                    <div class="player-number">
-                                        <p>P</p>
+
+                                    <div class="game-info-countdown">
+                                        <div class="countdown countdown-bordered" data-type="until"
+                                             data-time="31 Dec 2020 16:00" data-format="dhms" data-style="short"></div>
                                     </div>
-                                </div>
-                                <div class="player-voting-item-title">
-                                    <p>Raíssa</p>
-                                </div>
-                                <div class="player-voting-item-progress">
-                                    &lt;!&ndash; Linear progress bar&ndash;&gt;
-                                    <article
-                                            class="progress-linear progress-bar-modern progress-bar-modern-red">
-                                        <div class="progress-header">
-                                            <p>Programación</p>
-                                        </div>
-                                    </article>
+
+
+
                                 </div>
                             </div>
+
                         </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+
                     </div>
                 </div>
-            </div>-->
+            </div>
+
         </div>
     </section>
-
-    <!-- Latest News-->
-    <section class="section section-md bg-gray-100">
-        <div class="container">
-            <div class="row row-50">
-                <div class="col-lg-8">
-                    <div class="main-component">
-                        <!-- Heading Component-->
-
-                        <div class="row row-30">
-
-
-                            <div class="col-md-12">
-                                <!-- Post Gloria-->
-                                <article class="post-gloria"><img src="images/post-gloria-1-769x429.jpg" alt=""
-                                                                  width="769" height="429"/>
-                                    <div class="post-gloria-main">
-                                        <h3 class="post-gloria-title"><a href="#">Premier League Winners and Losers: a
-                                            quick look</a></h3>
-                                        <div class="post-gloria-meta">
-                                            <!-- Badge-->
-                                            <div class="badge badge-primary">The League
-                                            </div>
-                                            <div class="post-gloria-time"><span class="icon mdi mdi-clock"></span>
-                                                <time datetime="2020">April 15, 2020</time>
-                                            </div>
-                                        </div>
-                                        <div class="post-gloria-text">
-                                            <svg version="1.1" x="0px" y="0px" width="6.888px" height="4.68px"
-                                                 viewbox="0 0 6.888 4.68" enable-background="new 0 0 6.888 4.68"
-                                                 xml:space="preserve">
-                            <path d="M1.584,0h1.8L2.112,4.68H0L1.584,0z M5.112,0h1.776L5.64,4.68H3.528L5.112,0z"></path>
-                          </svg>
-                                            <p>During this year’s premier league, we are glad to announce that there are
-                                                new players who are...</p>
-                                        </div>
-                                        <a class="button" href="#">Read more</a>
-                                    </div>
-                                </article>
-                            </div>
-
-
-                        <!--    <div class="col-md-12">
-                                &lt;!&ndash; Swiper&ndash;&gt;
-                                <div class="swiper-container swiper-slider post-slider" data-loop="false"
-                                     data-autoplay="false" data-simulate-touch="false">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="swiper-slide-caption">
-                                                &lt;!&ndash; Post Alice&ndash;&gt;
-                                                <article class="post-alice"><img src="images/post-slide-1-769x397.jpg"
-                                                                                 alt="" width="769" height="397"/>
-                                                    <div class="post-alice-main">
-                                                        &lt;!&ndash; Badge&ndash;&gt;
-                                                        <div class="badge badge-secondary">the team
-                                                        </div>
-                                                        <h3 class="post-alice-title"><a href="#">Lewis named AIG MCAA
-                                                            Sevens head coach</a></h3>
-                                                        <div class="divider"></div>
-                                                        <div class="post-alice-time"><span
-                                                                class="icon mdi mdi-clock"></span>
-                                                            <time datetime="2020">April 15, 2020</time>
-                                                        </div>
-                                                    </div>
-                                                </article>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="swiper-slide-caption">
-                                                &lt;!&ndash; Post Alice&ndash;&gt;
-                                                <article class="post-alice"><img src="images/post-slide-2-769x397.jpg"
-                                                                                 alt="" width="769" height="397"/>
-                                                    <div class="post-alice-main">
-                                                        &lt;!&ndash; Badge&ndash;&gt;
-                                                        <div class="badge badge-primary">The League
-                                                        </div>
-                                                        <h3 class="post-alice-title"><a href="#">rumors about world
-                                                            soccer championship 2020</a></h3>
-                                                        <div class="divider"></div>
-                                                        <div class="post-alice-time"><span
-                                                                class="icon mdi mdi-clock"></span>
-                                                            <time datetime="2020">April 15, 2020</time>
-                                                        </div>
-                                                    </div>
-                                                </article>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="swiper-slide-caption">
-                                                &lt;!&ndash; Post Alice&ndash;&gt;
-                                                <article class="post-alice"><img src="images/post-slide-3-769x397.jpg"
-                                                                                 alt="" width="769" height="397"/>
-                                                    <div class="post-alice-main">
-                                                        &lt;!&ndash; Post Video Button&ndash;&gt;<a class="post-video-button"
-                                                                                    href="#modal1"
-                                                                                    data-toggle="modal"><span
-                                                            class="icon material-icons-play_arrow"></span></a>
-                                                        <h3 class="post-alice-title"><a href="#">2020 Europa League
-                                                            Final</a></h3>
-                                                        <div class="divider"></div>
-                                                        <div class="post-alice-time"><span
-                                                                class="icon mdi mdi-clock"></span>
-                                                            <time datetime="2020">April 15, 2020</time>
-                                                        </div>
-                                                    </div>
-                                                </article>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    &lt;!&ndash; Swiper Pagination&ndash;&gt;
-                                    <div class="swiper-pagination"></div>
-                                    &lt;!&ndash; Swiper Navigation&ndash;&gt;
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-button-next"></div>
-                                </div>
-                            </div>-->
-                            <div class="col-md-12">
-                                <!-- Post Future-->
-                                <article class="post-future post-future-horizontal"><a class="post-future-figure"
-                                                                                       href="#"><img
-                                        src="images/news-3-3-370x325.jpg" alt="" width="370" height="325"/></a>
-                                    <div class="post-future-main">
-                                        <h4 class="post-future-title"><a href="#">Zidane: “We’re not going to change the
-                                            way we play at the Calderón”</a></h4>
-                                        <div class="post-future-meta">
-                                            <!-- Badge-->
-                                            <div class="badge badge-red">hot<span class="icon mdi mdi-fire"></span>
-                                            </div>
-                                            <div class="post-future-time"><span class="icon mdi mdi-clock"></span>
-                                                <time datetime="2020">April 15, 2020</time>
-                                            </div>
-                                        </div>
-                                        <hr/>
-                                        <div class="post-future-text">
-                                            <p>Zidane spoke to the media at the Real Madrid City. The Whites coach
-                                                explained how the team is going in to the second leg of the
-                                                Champions...</p>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main-component">
-                        <!-- Heading Component-->
-                        <article class="heading-component">
-                            <div class="heading-component-inner">
-                                <h5 class="heading-component-title">Upcoming Match
-                                </h5><a class="button button-xs button-gray-outline" href="#">Calendar</a>
-                            </div>
-                        </article>
-                        <!-- Game Result Bug-->
-
-                    </div>
-                </div>
-                <!-- Aside Block-->
-                <div class="col-lg-4">
-                    <aside class="aside-components">
-                        <div class="aside-component">
-                            <div class="owl-carousel-outer-navigation-1">
-                                <!-- Heading Component-->
-                                <article class="heading-component">
-                                    <div class="heading-component-inner">
-                                        <h5 class="heading-component-title">Latest results
-                                        </h5>
-                                        <div class="owl-carousel-arrows-outline">
-                                            <div class="owl-nav">
-                                                <button class="owl-arrow owl-arrow-prev"></button>
-                                                <button class="owl-arrow owl-arrow-next"></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                                <!-- Owl Carousel-->
-                                <div class="owl-carousel owl-spacing-1" data-items="1" data-dots="false" data-nav="true"
-                                     data-autoplay="true" data-autoplay-speed="4000" data-stage-padding="0"
-                                     data-loop="true" data-margin="30" data-mouse-drag="false"
-                                     data-animation-in="fadeIn" data-animation-out="fadeOut"
-                                     data-nav-custom=".owl-carousel-outer-navigation-1">
-                                    <!-- Game Result Creative-->
-                                    <article class="game-result game-result-creative">
-                                        <div class="game-result-main-vertical">
-                                            <div class="game-result-team game-result-team-horizontal game-result-team-first">
-                                                <figure class="game-result-team-figure"><img
-                                                        src="images/team-sportland-31x41.png" alt="" width="31"
-                                                        height="41"/>
-                                                </figure>
-                                                <div class="game-result-team-title">
-                                                    <div class="game-result-team-name">Sportland</div>
-                                                    <div class="game-result-team-country">Los angeles</div>
-                                                </div>
-                                                <div class="game-result-score game-result-score-big game-result-team-win">
-                                                    2<span class="game-result-team-label game-result-team-label-right">Win</span>
-                                                </div>
-                                            </div>
-                                            <span class="game-result-team-divider">VS</span>
-                                            <div class="game-result-team game-result-team-horizontal game-result-team-second">
-                                                <figure class="game-result-team-figure"><img
-                                                        src="images/team-fenix-40x32.png" alt="" width="40"
-                                                        height="32"/>
-                                                </figure>
-                                                <div class="game-result-team-title">
-                                                    <div class="game-result-team-name">Real madrid</div>
-                                                    <div class="game-result-team-country">Spain</div>
-                                                </div>
-                                                <div class="game-result-score game-result-score-big">1
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="game-result-footer">
-                                            <ul class="game-result-details">
-                                                <li>Home</li>
-                                                <li>New Yorkers Stadium</li>
-                                                <li>
-                                                    <time datetime="2020-04-14">April 14, 2020</time>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </article>
-                                    <!-- Game Result Creative-->
-                                    <article class="game-result game-result-creative">
-                                        <div class="game-result-main-vertical">
-                                            <div class="game-result-team game-result-team-horizontal game-result-team-first">
-                                                <figure class="game-result-team-figure"><img
-                                                        src="images/team-bavaria-fc-26x34.png" alt="" width="26"
-                                                        height="34"/>
-                                                </figure>
-                                                <div class="game-result-team-title">
-                                                    <div class="game-result-team-name">Bavaria FC</div>
-                                                    <div class="game-result-team-country">Germany</div>
-                                                </div>
-                                                <div class="game-result-score game-result-score-big">2
-                                                </div>
-                                            </div>
-                                            <span class="game-result-team-divider">VS</span>
-                                            <div class="game-result-team game-result-team-horizontal game-result-team-second">
-                                                <figure class="game-result-team-figure"><img
-                                                        src="images/team-athletic-33x30.png" alt="" width="33"
-                                                        height="30"/>
-                                                </figure>
-                                                <div class="game-result-team-title">
-                                                    <div class="game-result-team-name">Atletico</div>
-                                                    <div class="game-result-team-country">USA</div>
-                                                </div>
-                                                <div class="game-result-score game-result-score-big game-result-team-win">
-                                                    3<span class="game-result-team-label game-result-team-label-right">Win</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="game-result-footer">
-                                            <ul class="game-result-details">
-                                                <li>Away</li>
-                                                <li>Bavaria Stadium</li>
-                                                <li>
-                                                    <time datetime="2020-04-14">April 14, 2020</time>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="aside-component">
-                            <!-- Heading Component-->
-                            <article class="heading-component">
-                                <div class="heading-component-inner">
-                                    <h5 class="heading-component-title">In the spotlight
-                                    </h5><a class="button button-xs button-gray-outline" href="#">All news</a>
-                                </div>
-                            </article>
-                            <!-- List Post Classic-->
-
-                        </div>
-
-
-                        <div class="aside-component">
-                            <!-- Heading Component-->
-                            <article class="heading-component">
-                                <div class="heading-component-inner">
-                                    <h5 class="heading-component-title">Our Awards
-                                    </h5>
-                                </div>
-                            </article>
-                            <!-- Owl Carousel-->
-                            <div class="owl-carousel owl-carousel-dots-modern awards-carousel" data-items="1"
-                                 data-autoplay="true" data-autoplay-speed="4000" data-dots="true" data-nav="false"
-                                 data-stage-padding="0" data-loop="true" data-margin="0" data-mouse-drag="true">
-                                <!-- Awards Item-->
-                                <div class="awards-item">
-                                    <div class="awards-item-main">
-                                        <h4 class="awards-item-title"><span class="text-accent">World</span>Champions
-                                        </h4>
-                                        <div class="divider"></div>
-                                        <h5 class="awards-item-time">December 2014</h5>
-                                    </div>
-                                    <div class="awards-item-aside"><img src="images/thumbnail-minimal-1-67x147.png"
-                                                                        alt="" width="67" height="147"/>
-                                    </div>
-                                </div>
-                                <!-- Awards Item-->
-                                <div class="awards-item">
-                                    <div class="awards-item-main">
-                                        <h4 class="awards-item-title"><span class="text-accent">Best</span>Forward
-                                        </h4>
-                                        <div class="divider"></div>
-                                        <h5 class="awards-item-time">June 2015</h5>
-                                    </div>
-                                    <div class="awards-item-aside"><img src="images/thumbnail-minimal-2-68x126.png"
-                                                                        alt="" width="68" height="126"/>
-                                    </div>
-                                </div>
-                                <!-- Awards Item-->
-                                <div class="awards-item">
-                                    <div class="awards-item-main">
-                                        <h4 class="awards-item-title"><span class="text-accent">Best</span>Coach
-                                        </h4>
-                                        <div class="divider"></div>
-                                        <h5 class="awards-item-time">November 2016</h5>
-                                    </div>
-                                    <div class="awards-item-aside"><img src="images/thumbnail-minimal-3-73x135.png"
-                                                                        alt="" width="73" height="135"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="aside-component">
-                            <!-- Heading Component-->
-                            <article class="heading-component">
-                                <div class="heading-component-inner">
-                                    <h5 class="heading-component-title">Gallery
-                                    </h5>
-                                </div>
-                            </article>
-                            <article class="gallery" data-lightgallery="group">
-                                <div class="row row-10 row-narrow">
-                                    <div class="col-6 col-sm-4 col-md-6 col-lg-4"><a class="thumbnail-creative"
-                                                                                     data-lightgallery="item"
-                                                                                     href="images/gallery-soccer-1-original.jpg"><img
-                                            src="images/gallery-soccer-1-212x212.jpg" alt=""/>
-                                        <div class="thumbnail-creative-overlay"></div>
-                                    </a>
-                                    </div>
-                                    <div class="col-6 col-sm-4 col-md-6 col-lg-4"><a class="thumbnail-creative"
-                                                                                     data-lightgallery="item"
-                                                                                     href="images/gallery-soccer-2-original.jpg"><img
-                                            src="images/gallery-soccer-2-212x212.jpg" alt=""/>
-                                        <div class="thumbnail-creative-overlay"></div>
-                                    </a>
-                                    </div>
-                                    <div class="col-6 col-sm-4 col-md-6 col-lg-4"><a class="thumbnail-creative"
-                                                                                     data-lightgallery="item"
-                                                                                     href="images/gallery-soccer-3-original.jpg"><img
-                                            src="images/gallery-soccer-3-212x212.jpg" alt=""/>
-                                        <div class="thumbnail-creative-overlay"></div>
-                                    </a>
-                                    </div>
-                                    <div class="col-6 col-sm-4 col-md-6 col-lg-4"><a class="thumbnail-creative"
-                                                                                     data-lightgallery="item"
-                                                                                     href="images/gallery-soccer-4-original.jpg"><img
-                                            src="images/gallery-soccer-4-212x212.jpg" alt=""/>
-                                        <div class="thumbnail-creative-overlay"></div>
-                                    </a>
-                                    </div>
-                                    <div class="col-6 col-sm-4 col-md-6 col-lg-4"><a class="thumbnail-creative"
-                                                                                     data-lightgallery="item"
-                                                                                     href="images/gallery-soccer-5-original.jpg"><img
-                                            src="images/gallery-soccer-5-212x212.jpg" alt=""/>
-                                        <div class="thumbnail-creative-overlay"></div>
-                                    </a>
-                                    </div>
-                                    <div class="col-6 col-sm-4 col-md-6 col-lg-4"><a class="thumbnail-creative"
-                                                                                     data-lightgallery="item"
-                                                                                     href="images/gallery-soccer-6-original.jpg"><img
-                                            src="images/gallery-soccer-6-212x212.jpg" alt=""/>
-                                        <div class="thumbnail-creative-overlay"></div>
-                                    </a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="aside-component">
-                            <!-- Heading Component-->
-                            <article class="heading-component">
-                                <div class="heading-component-inner">
-                                    <h5 class="heading-component-title">Galactics
-                                    </h5>
-                                </div>
-                            </article>
-                            <div class="block-voting">
-                                <div class="group-md">
-                                    <!-- Player Voting Item-->
-                                    <div class="player-voting-item">
-                                        <div class="player-voting-item-figure"><img src="images/player-5-152x144.jpg"
-                                                                                    alt="" width="152" height="144"/>
-                                            <div class="player-number">
-                                                <p>P</p>
-                                            </div>
-                                        </div>
-                                        <div class="player-voting-item-title">
-                                            <p>Raíssa</p>
-                                        </div>
-                                        <div class="player-voting-item-progress">
-                                            <!-- Linear progress bar-->
-                                            <article
-                                                    class="progress-linear progress-bar-modern progress-bar-modern-red">
-                                                <div class="progress-header">
-                                                    <p>Programación</p>
-                                                </div>
-                                            </article>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </aside>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="section footer-classic footer-classic-dark context-dark">
-        <div class="footer-classic-main">
-            <div class="container">
-
-
-            </div>
-        </div>
-
-    </footer>
-    <!-- Modal Video-->
-    <div class="modal modal-video fade" id="modal1" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">&times;</span></button>
-                </div>
-                <div class="modal-body">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" width="560" height="315"
-                                data-src="https://www.youtube.com/embed/uSzNA2_y46c"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 <!-- Global Mailform Output-->
 <div class="snackbars" id="form-output-global"></div>
 <!-- Javascript-->
 <script src="js/core.min.js"></script>
+
 <script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         // Inicializa o Swiper
         var swiperInstance = new Swiper('.swiper-container2', {
             loop: false,
             simulateTouch: false,
-            effect: 'fade',
-            autoplay: false, // Desativa o autoplay
+          //  effect: 'coverflow',
+            effect: 'coverflow',
+            autoplay: {
+                delay: 10000, // Define o tempo de exibição de cada slide em 5000 milissegundos (5 segundos)
+                disableOnInteraction: false, // Continua o autoplay após a interação do usuário
+            },
+            speed: 1500, // Desativa o autoplay
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -1041,30 +622,50 @@
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
+            },
+            lazy: {
+                loadPrevNext: true, // Carregar imagens dos slides vizinhos
+            },
+            coverflowEffect: {
+                rotate: 10,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true
+            },
+            on: {
+                reachEnd: function() {
+                    // Quando atingir o final dos slides, adicione a classe
+                    this.el.classList.add('bg-restart');
+                },
+                slideChange: function() {
+                    // Quando mudar o slide, remova a classe se não estiver no final
+                    if (this.isEnd === false) {
+                        this.el.classList.remove('bg-restart');
+                    }
+                }
             }
-        });
+        })
 
         // Adiciona o listener ao botão "Clasificación"
         document.getElementById('nav-clasificacion').addEventListener('click', function (event) {
-            event.preventDefault(); // Previne o comportamento padrão do link
-            swiperInstance.slideTo(0); // Move para o primeiro slide (index 0)
-        });
+            event.preventDefault() // Previne o comportamento padrão do link
+            swiperInstance.slideTo(0) // Move para o primeiro slide (index 0)
+        })
 
         // Adiciona o listener ao botão "Resultados"
         document.getElementById('nav-results').addEventListener('click', function (event) {
-            event.preventDefault(); // Previne o comportamento padrão do link
-            swiperInstance.slideTo(1); // Move para o segundo slide (index 1)
-        });
+            event.preventDefault() // Previne o comportamento padrão do link
+            swiperInstance.slideTo(1) // Move para o segundo slide (index 1)
+        })
 
         document.getElementById('nav-next-matches').addEventListener('click', function (event) {
-            event.preventDefault(); // Previne o comportamento padrão do link
-            swiperInstance.slideTo(2); // Move para o segundo slide (index 1)
-        });
-        document.getElementById('teams-presentation').addEventListener('click', function (event) {
-            event.preventDefault(); // Previne o comportamento padrão do link
-            swiperInstance.slideTo(3); // Move para o segundo slide (index 1)
-        });
-    });
+            event.preventDefault() // Previne o comportamento padrão do link
+            swiperInstance.slideTo(2) // Move para o segundo slide (index 1)
+        })
+
+
+    })
 
 </script>
 </body>

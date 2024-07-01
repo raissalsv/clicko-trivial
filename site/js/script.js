@@ -1243,7 +1243,8 @@
 					if (url = $this.attr("data-slide-bg")) {
 						$this.css({
 							"background-image": "url(" + url + ")",
-							"background-size": "cover"
+							"background-size": "cover",
+							"background-position": "center"
 						})
 					}
 				}
@@ -1301,7 +1302,7 @@
 						initLightGalleryItem(s.find('[data-lightgallery="item"]'), 'lightGallery-in-carousel');
 					}
 				});
-
+/*
 				// Adiciona o listener ao botão "Clasificación"
 				document.getElementById('nav-clasificacion').addEventListener('click', function (event) {
 					console.log(swiperInstance.clickedIndex)
@@ -1313,7 +1314,7 @@
 					console.log(swiperInstance.clickedIndex)
 					event.preventDefault(); // Previne o comportamento padrão do link
 					swiperInstance.slideTo(1); // Move para o segundo slide (index 1)
-				});
+				});*/
 
 				$window.on("resize", (function (s) {
 					return function () {
