@@ -3,6 +3,7 @@
 	/**
 	 * Global variables
 	 */
+
 	var userAgent = navigator.userAgent.toLowerCase(),
 		initialDate = new Date(),
 		$document = $(document),
@@ -1715,5 +1716,6 @@
 		}
 
 	});
+
 }());
 
