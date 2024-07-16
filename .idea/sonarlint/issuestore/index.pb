@@ -7,3 +7,5 @@ B
 site/css/style.css,1\2\121e6f36891d14f2a63c225faf72870e859300ba
 ?
 site/index.html,f\8\f8b5f3ae1c096b53afb265d4a56fc2955bfc7607
+T
+$site/images/trivial/logo_trivial.svg,e\1\e13143318de96ddf43ebd03aadac1bdaf929fdca
